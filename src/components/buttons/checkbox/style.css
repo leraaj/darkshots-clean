@@ -1,0 +1,33 @@
+.checkbox-label {
+  cursor: pointer;
+}
+.checkbox-input {
+  display: none;
+}
+.checkbox-input:checked ~ .checkbox-span {
+  background-color: #fff;
+  color: #000;
+  border: 1px #fff outset;
+  text-shadow: none;
+}
+.checkbox-span {
+  position: relative;
+  display: inline-block;
+  background-color: #424242;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px #fff outset;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  transition: 0.2s;
+  user-select: none;
+  overflow: hidden;
+}
+.checkbox-span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}

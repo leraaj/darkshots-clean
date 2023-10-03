@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Agdasima-Regular";
+  src: local("Agdasima-Regular"),
+    url("../assets/fonts/Agdasima-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Agdasima-Bold";
+  src: local("Agdasima-Bold"),
+    url("../assets/fonts/Agdasima-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+:root {
+  --th-bg-primary: #151515;
+  --th-bg-secondary: #d9d9d9;
+  --th-bg-dark: black;
+}
+* {
+  font-family: "Agdasima-Regular";
+}
+body {
+  background-color: var(--th-bg-dark);
+}
+.th-fs-1 {
+  font-size: calc(72px);
+}
+.th-fs-2 {
+  font-size: calc(34px);
+}
+.th-fs-3 {
+  font-size: calc(24px);
+}
+.th-fw-bold {
+  font-family: "Agdasima-Bold";
+}
+.th-bg-primary {
+  background-color: var(--th-bg-primary) !important;
+}
+.th-bg-secondary {
+  background-color: var(--th-bg-secondary) !important;
+}
+.td-ellipsis {
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
